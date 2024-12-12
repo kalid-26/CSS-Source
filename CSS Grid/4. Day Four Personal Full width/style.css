@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+.she{
+  border-radius: 10%;
+  box-shadow: 1px 1px 10px rgba(40, 40, 40, 0.534), 1px 1px 5px rgba(59, 58, 58, 0.283);
+  border: 3px solid white;
+}
+
+body{
+  background: rgb(238, 243, 239);
+  font-family: 'poppins';
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  min-height: 100%;
+  gap: 30px;
+  padding: 60px;
+}
+
+.panel{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.welcome{
+  background: rgb(105, 101, 118);
+  padding: 30px;
+  grid-auto-rows: 1fr;
+}
+
+nav a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: rgb(224, 224, 224);
+}
+
+.last-word{
+  align-self: self-end;
+}
+
+.text{
+  color: rgb(176, 186, 186);
+}
+
+.text h3{
+  color: beige;
+  font-size: 1.8em;
+}
+
+.text p{
+  line-height: 1.5;
+}
+
+.last-word{
+  color:rgb(192, 192, 192)
+}

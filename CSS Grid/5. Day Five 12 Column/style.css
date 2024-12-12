@@ -1,0 +1,70 @@
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'poppins';
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+
+header{
+  padding: 20px 40px;
+  background-color: rgb(242, 242, 242);
+  align-items: center;
+}
+
+header h1{
+  grid-column: span 6;
+}
+
+header nav{
+  grid-column: span 6;
+  justify-self: end;
+}
+
+header nav a{
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+main{
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+main img{
+  grid-column: span 6;
+  width: 100%;
+  border-radius: 10px;
+}
+
+main .text{
+  grid-column: 8 / span 5;
+}
+
+main > h2{
+  grid-column: span 12;
+  text-align: center;
+  margin-top: 7%;
+}
+
+main .card{
+  grid-column: span 3;
+  /* background-color: bisque; */
+  background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(248, 235, 235, 0.259)) ,url(img/derula\ dark.jpg);
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
